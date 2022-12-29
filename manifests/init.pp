@@ -11,6 +11,12 @@
 #  NOTES:	This depends on facts supplied by the aix_vios_facts and
 #		aix_ifix_facts modules to work.
 #
+#  NOTES:   Digging into some other ifixes, it looks like there are some complex
+#       cases where the AIX patch level as a whole is not enough to determine
+#       which spin of an ifix applies (IJ43869 has 2 spins for 7.2.5.3 based on
+#       the specific file set level that's being patched).  Without more custom
+#       facts, I'm not sure how I'd solve that in a Puppet module.
+#
 #-------------------------------------------------------------------------------
 #
 #  From Advisory.asc:
